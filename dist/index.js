@@ -11,7 +11,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         define(factory);
     } else {
         // window - browser canon
-        if (Object.prototype.toString.call(window.zhf).slice(8, -1).toLowerCase() !== 'Object') {
+        if (Object.prototype.toString.call(window.zhf).slice(8, -1).toLowerCase() !== 'object') {
             window.zhf = {};
         }
         window.zhf[name] = factory();
